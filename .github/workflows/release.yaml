@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - more_functional_version
+      - main
 
 jobs:
   release:
