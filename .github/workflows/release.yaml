@@ -31,4 +31,4 @@ jobs:
         with:
           charts_dir: mlops_chart
         env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          CR_TOKEN: "${{ secrets.MY_GITHUB_TOKEN }}"
