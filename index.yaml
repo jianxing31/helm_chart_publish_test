@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  mlops:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-04-27T11:33:58.70802896Z"
+    description: A Helm chart for Kubernetes
+    digest: b9e966e4060e6c7e3f44349d1c65392f3eb278bd450c95ddc0e99da318b99dee
+    name: mlops
+    type: application
+    urls:
+    - https://github.com/jianxing31/helm_chart_publish_test/releases/download/mlops-0.1.0/mlops-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-04-27T11:33:58.708038969Z"
