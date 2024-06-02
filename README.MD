@@ -11,6 +11,7 @@ Same prerequisites as listed in [chart-releaser-action]( https://github.com/helm
 ## How to release
 Update chart detail in your main branch like [this commit](https://github.com/jianxing31/helm_chart_publish_test/commit/2d2e28499d65b0aae0c2105c28aa523dced651b5), Github actions will be triggered to package our helm charts and publish them to Github pages.
 ![image1](https://github.com/jianxing31/helm_chart_publish_test/blob/main/images/chart_update_test.jpg)
+A sample of released helm chart.
 ![image1](https://github.com/jianxing31/helm_chart_publish_test/blob/main/images/chart_release.jpg)
 
 ## How to use released charts
