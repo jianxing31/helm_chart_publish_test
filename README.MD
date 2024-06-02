@@ -16,11 +16,19 @@ Update chart detail in your main branch like [this commit](https://github.com/ji
 ## How to use released charts
 A specific version can be referenced with version key in our configuration file. For example, with helmfile.yaml the setting will be similar to the following code.
 ```shell
+environments:
+  dev:
+  prod:
+
+repositories:
+  - name: my-repo
+    url: https://raw.githubusercontent.com/jianxing31/helm_chart_publish_test/gh-pages
+
 releases:
-  - name:test-name
-    namespace: test-namespace
-    chart: https://raw.githubusercontent.com/jianxing31/helm_chart_publish_test/gh-pages/mlops
+  - name: my-repo-{{ .Environment.Name }}
+    namespace: {{ .Environment.Name }}
+    chart: my-repo/mlops
     version: 0.2.0
     values:
-      - ./test-values.yaml
+      - ./my_values.yaml
 ```
